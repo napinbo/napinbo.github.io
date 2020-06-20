@@ -1,0 +1,155 @@
+/*
+* @Author: hxp_warriors9812
+* @Date:   2020-6-11
+* @Last Modified by:  hxp_warriors9812
+*/
+@charset "utf-8";
+/*设定整体布局样式*/
+* {
+  box-sizing: border-box;/*盒模型*/
+}
+
+html {
+  overflow-y: scroll;/*溢出处理-滚动显示*/
+}
+
+/*设定字体样式以及背景图片*/
+body {
+  font-family: 'Titillium Web', sans-serif;
+  background: url("http://p2.qhimg.com/bdr/__85/t018af1961351b137ec.jpg") no-repeat center center/cover;
+}
+
+/*设置超链接的样式*/
+a {
+  text-decoration: none;
+  color: #1ab188;
+  -webkit-transition: .5s ease;/*设置超链接的过渡样式，使其更为美观*/
+  transition: .5s ease;
+}
+
+a:hover {
+  color: #179b77;/*设置超链接悬停的样式*/
+}
+
+/*设定表单的样式*/
+.form {
+  background: transparent;
+  padding: 40px;
+  max-width: 600px;/*设定填充的段落最大宽度*/
+  margin: 40px auto;
+  border-radius: 4px;/*设定圆角*/
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);/*设定表单阴影*/
+}
+
+/*设定联系方式标题的样式*/
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+/*设定框内元素的样式*/
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);/*设元素变量的平移，对齐各个label元素内的字体，显示的更加协调*/
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;/*不设置额外的鼠标链接样式*/
+  font:italic 1.5em Georgia, serif;
+}
+
+/*设定星标符号的样式*/
+label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+/*设定鼠标点击后的框内元素、星标符号以及高亮表示的样式*/
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+label.highlight {
+  color: #ffffff;
+}
+
+/*设定input框的样式*/
+input {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;/*不设置额外的颜色和背景*/
+  background-image: none;
+  border: 1px solid #a0b3b0;/*设定外框的样式*/
+  color: #ffffff;
+  border-radius: 0;/*纯长方形输入条*/
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+/*聚焦时的央视改变*/
+input:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.top-row > div:last-child {
+  margin: 0;
+}
+
+/*设定最后的send to me按钮的样式*/
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;/*定义为大写字母*/
+  letter-spacing: .1em;/*设定字间距*/
+  background: #1ab188;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;/*设定过渡效果*/
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}

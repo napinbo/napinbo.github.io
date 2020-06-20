@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!--网页标签名-->
+		<title>郝熙平|平移世界-future.programmer</title>
+		<!--引入外部CSS样式-->
+		<link rel="stylesheet" href="css/index.css">
+		<!--设置网页的标签图标-->
+		<link rel="shortcut icon " href="img/favicon.ico">
+	</head>
+	
+	<body>
+		<!--设定外部框架，其中放置一张背景图片以及页眉导航栏-->
+		<div id="homepage">
+			<!--这一部分为主页的页眉导航栏，用于进行跳转-->
+			<div class="header">
+			    <!--利用nav标签将具有导航性质的链接划分在一起-->
+				<nav>
+					<!--创建无序列表存储页眉信息-->
+			        <ul>
+			            <li><span> <a href="#home">Homepage</a></span></li>
+						<li><span> <a href="profile.html">Profile</a></span></li>
+						<li><span> <a href="honor.html">Honor</a></span></li>
+			            <li><span> <a href="credit.html">Credit</a></span></li>
+						<li><span> <a href="project.html">Projects</a></span></li>
+						<li><span> <a href="digest.html">Digest</a></span></li>
+						<li><span> <a href="collective.html">Collective</a></span></li>
+			            <li><span> <a href="contact.html">Contact</a></span></li>
+						<li><span> <a href="treasure.html">Treasure </a></span></li>
+			        </ul><!--无序列表结束-->
+			    </nav><!--nav标签结束-->
+			</div><!--页眉导航栏结束-->
+			
+			<!--这一部分为主页的座右铭以及动态时钟，使用了index.js用于动态调节时间，该js为自己编写-->
+			<div class="content">
+				<!--定义一个区域用于存放时间以及座右铭，该部分定义为#home-->
+				<section id="home">
+				    <div>
+						<!--该标题标签存储时间用于后期的动态时间显示-->
+				        <h2>2020/6/3 凌晨12：00</h2>
+				        <h1>Be your own light and light up your life.</h1>
+				        <p>Welcome To XiPing Hao's Translational World</p>
+				    </div><!--内容部分结束-->
+				</section><!--区域存储结束-->
+			</div><!--时钟+座右铭信息部分结束-->
+		</div>
+		
+		<!--引入动态时间变化的js组件-->
+		<script src="./js/index.js"></script>
+		<!--引入动态的二位立体小人js组件，可追随鼠标移动-->
+		<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
+			<script type="text/javascript">
+				L2Dwidget.init();
+			</script>
+	</body><!--主页设计完成-->
+</html>

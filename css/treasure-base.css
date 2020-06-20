@@ -1,0 +1,118 @@
+/*
+* @Author: hxp_warriors9812
+* @Date:   2020-6-17 
+* @Last Modified by:  hxp_warriors9812
+*/
+@charset "utf-8";
+
+/*设定全局整体样式*/
+body,h1,h2,h3,h4,h5,h6,p {
+	margin:0;
+}
+ul,ol,dl {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+img {
+	border:none;border:none;
+}
+a {
+	text-decoration:none;
+	color:#000;
+	outline:none;
+}
+body {
+	font:14px/1.5 'Microsoft Yahei',sans-serif;/*sans-serif 是手机默认字体*/
+}
+.dis-n{display:none;}
+
+/*设定float形式-清除浮动*/
+.clearfix:after{/*after是伪对象*/
+	content: '';
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;/*给外层div的末尾添加一个content，并利用此清除浮动*/
+	clear: both;
+}
+
+.fl-l {
+	float:left;
+} 
+
+.fl-r {
+	float:right;
+}
+
+/*设定元素的位置样式*/
+.pos-r {
+	position:relative;
+} 
+.pos-a { 
+	position:absolute;
+} 
+.pos-f {
+	position:fixed;
+}
+.t{top: 0;} .r{right: 0;} .b{bottom:0;} .l{left: 0;}
+
+/*设定本页面的字体形式，因为本页面字体大小变化较多故采用集合的形式，具体的字体形式直接在内联体现*/
+.f-size12{font-size:12px;}
+.f-size14{font-size:14px;}
+.f-size16{font-size:16px;}
+.f-size18{font-size:18px;}
+.f-size20{font-size:20px;}
+.f-size22{font-size:22px;}
+.f-size24{font-size:24px;}
+.f-size26{font-size:26px;}
+.f-size28{font-size:28px;}
+.f-size30{font-size:30px;}
+
+.f-wei-nor {
+	font-weight: normal;
+}
+.f-wei-bold {
+	font-weight:bold;
+}
+.f-sty-nor {
+	font-style: normal;
+}
+
+/*设定间距，因为本页面间距大小变化较多故采用集合的形式，具体的兼具设定直接在内联体现*/
+.mar-a{margin:auto;}
+.mar-5{margin:5px;}
+.mar-10{margin:10px;}
+.mar-15{margin:15px;}
+.mar-20{margin:20px;}
+.mar-25{margin:25px;}
+
+.mar-t5{margin-top:5px;}
+.mar-t10{margin-top:10px;}
+.mar-t15{margin-top:15px;}
+.mar-t20{margin-top:20px;}
+.mar-t25{margin-top:25px;}
+.mar-t30{margin-top:30px;}
+.mar-t5{margin-top:5px;}
+
+.mar-r5{margin-right:5px;}
+.mar-r10{margin-right:10px;}
+.mar-r15{margin-right:15px;}
+.mar-r20{margin-right:20px;}
+.mar-r25{margin-right:25px;}
+.mar-r30{margin-right:30px;}
+.mar-r40{margin-right:40px;}
+
+.mar-b5{margin-bottom:5px;}
+.mar-b10{margin-bottom:10px;}
+.mar-b15{margin-bottom:15px;}
+.mar-b20{margin-bottom:20px;}
+.mar-b25{margin-bottom:25px;}
+.mar-b30{margin-bottom:30px;}
+
+.mar-l5{margin-left:5px;}
+.mar-l10{margin-left:10px;}
+.mar-l15{margin-left:15px;}
+.mar-l20{margin-left:20px;}
+.mar-l25{margin-left:25px;}
+.mar-l30{margin-left:30px;}

@@ -1,0 +1,415 @@
+/*
+* @Author: hxp_warriors9812
+* @Date:   2020-6-17 
+* @Last Modified by:  hxp_warriors9812
+*/
+@charset "utf-8";
+
+/*设置页面首部的样式*/
+.min1140 {
+	min-width:1140px;
+}
+
+/*设置header部分的样式*/
+#header {
+	width:100%;
+	height:760px;
+	padding-bottom:80px;
+	background:#ecf0f1;/*设置整体首部背景色*/
+}
+
+/*设置导航栏的样式*/
+#header .nav {
+	width:100%;
+	height:70px;
+	background:#fff;
+}
+
+/*分别设置导航栏各个元素单位的样式以及位置*/
+#header .nav .wrap {
+	width:1140px;
+	height:70px;
+}
+/*第一个元素单位样式*/
+#header .nav .wrap .link1 {
+	width:50px;
+	height:100%;
+	padding-right:62px;
+}
+#header .nav .wrap li a {
+	color:#5e6068;
+}
+#header .nav .wrap .link1 a {
+	width:50px;
+	height:100%;
+	display:block;
+	font-weight:700;
+	line-height:70px;
+	text-align:center;
+}
+/*第二个元素单位样式*/
+#header .nav .wrap .link2 {
+	width:95px;
+	height:100%;
+	padding:0px 72.5px 0px 72.5px;
+}
+#header .nav .wrap .link2 a {
+	width:95px;
+	height:100%;
+	display:block;
+	font-weight:bold;
+	line-height:70px;
+	text-align:center;
+}
+/*第三个元素单位样式*/
+#header .nav .wrap .link3 {
+	width:80px;
+	height:100%;
+	padding:0px 67.5px 0px 67.5px;
+}
+#header .nav .wrap .link3 a {
+	width:80px;
+	height:100%;
+	display:block;
+	font-weight:bold;
+	line-height:70px;
+	text-align:center;
+}
+
+#header .nav .wrap .icon {
+	width:315px;
+	height:100%; 
+	/*在原置空位置引入图标*/
+	background-image:url("../img/nav-icon.png");
+	background-repeat:no-repeat;
+	background-position:62.5px 18px;
+	padding:0px 62.5px 0px 62.5px; }
+/*第四个元素单位样式*/	
+#header .nav .wrap .link4 {
+	width:80px;
+	height:100%;
+	padding:0px 0px 0px 53px;
+}
+#header .nav .wrap .link4 a {
+	width:80px;
+	height:100%;
+	display:block;
+	font-weight:bold;
+	line-height:70px;
+	text-align:center;
+}
+/*设定小脚标*/
+.minibox {
+	position:relative;
+}
+.minibox:after {
+	content:"";
+	width:4px;
+	height:4px;
+	border:2px dotted #ddd;/*设定边界样式*/
+	box-shadow:0px 0px 2px 0px #ddd inset;/*设定元素单位阴阳央视*/
+	transform:rotate(45deg); /*设定元素旋转*/
+	position:absolute;
+	top:50%;
+	margin-top:-5px;/*调整参数美化界面显示*/
+	right:-5px;
+}
+
+/*设定bnner的样式*/
+#header .banner {
+	width:100%;
+	height:690px;
+	overflow:hidden;/*设定内部元素外溢的处理方式*/
+}
+#header .banner ul {
+	width:300%;
+	height:100%
+}
+#header .banner ul li {
+	width:33.33%;
+	height:100%;
+	list-style:none;/*不显示列表符号，不然会影响美观*/
+}
+#header .banner .intro {
+	font-size:60px;
+	color:#fff;
+	top:50%;
+	margin-top:-22.5px;
+	left:50%;
+	margin-left:-350px;
+	font-weight:bold;/*加粗显示更加美观*/
+}
+
+/*设定主体部分的显示*/
+#mian {
+	width:100%;
+	height:1400px;
+	background:#ecf0f1;
+	margin-top: -90px;
+}
+/*主题子栏目的第一部分*/
+#mian .dv1 {
+	width:1140px;
+	height:500px;
+}
+
+/*设定子栏目第一部分的首部样式*/
+#mian .dv1 .header {
+	width:100%;
+	height:135px;
+}
+#mian .dv1 .header .title {
+	width:475px;
+	height:35px;
+	bottom:0px;
+	right:50%;
+	margin-right:-237.5px;
+	background-image:url("../img/title01.png");
+}
+/*设定分隔栏的图片属性*/
+#mian .dv1 .interval {
+	width:100%;
+	height:70px;
+}
+#mian .dv1 .interval img {
+	display:block;
+	top:15px;
+	left:50%;
+	margin-left:-39px;
+}
+
+/*设定存储的内容样式*/
+#mian .dv1 .contain {
+	width:100%;
+	height:300px;
+}
+#mian .dv1 .contain li {
+	width:360px;
+	height:300px;
+}
+/*设定每一部分的左侧图片背景*/
+#mian .dv1 .contain .unit1 {
+	background-image:url("../img/dv-container1.jpg");
+}
+#mian .dv1 .contain .unit2 {
+	background-image:url("../img/dv-container2.jpg");
+}
+#mian .dv1 .contain .unit3 {
+	background-image:url("../img/dv-container3.jpg");
+}
+/*设定背景存放框的样式*/
+#mian .dv1 .contain li .bg {
+	width:298px;
+	height:98px;
+	border:1px solid #fff;
+	background:transparent;
+	margin:170px auto 0px;
+}
+/*设定每一部分的文字显示样式*/
+#mian .dv1 .contain li .bg .border {
+	width:270px;
+	height:68px;
+	border:1px solid #ccc;
+	margin:15px auto;
+}
+#mian .dv1 .contain li .bg .border {
+	font:italic 1.5em Georgia, serif;
+	color:whitesmoke;
+	text-transform:capitalize;/*定义为大写字母显示*/
+	font-weight:bold;
+	text-align:center;
+	line-height:70px;
+}
+
+/*设定第二部分子栏目的整体属性*/
+#mian .dv2 {
+	width:1140px;
+	height:830px;
+}
+/*设定该部分的图片存放属性*/
+#mian .dv2 .header {
+	width:100%;
+	height:135px;
+}
+#mian .dv2 .header .title {
+	width:487px;
+	height:45px;
+	bottom:0px;
+	right:50%;
+	margin-right:-243.5px;
+	background-image:url("../img/title02.png");
+}
+/*设定分隔栏样式*/
+#mian .dv2 .interval {
+	width:100%;
+	height:70px;
+}
+#mian .dv2 .interval img {
+	display:block;
+	top:15px;
+	left:50%;
+	margin-left:-39px;
+}
+/*设定第二部分子栏目的内容属性*/
+#mian .dv2 .contain {
+	width:100%;
+	height:630px;
+}
+#mian .dv2 .contain .rows1,.rows2 {
+	width:100%;
+	height:300px;
+}
+/* 设定第一行第一个的属性*/
+#mian .dv2 .contain .rows1 .div1 {
+	width:555px;
+	height:100%;
+}
+#mian .dv2 .contain .rows1 .div1 .fl {
+	width:278px;
+	height:300px;
+}
+#mian .dv2 .contain .rows1 .div1 .fr {
+	width:257px;
+	height:300px;
+	background:#fff;
+	padding-left:20px;
+}
+#mian .dv2 .contain .rows1 .div1 .fr .top {
+	width:230px;
+	height:150px;
+}
+#mian .dv2 .contain .rows1 .div1 .fr .top .title {
+	display:block;
+	height:60px;
+	margin-top:10px;
+	line-height:60px;
+	font-family: Arail;
+	font-weight:bold;
+}
+#mian .dv2 .contain .rows1 .div1 .fr .top .intro {
+	word-wrap:break-word;/*由于是英文输入，允许长单词换行*/
+	word-break:break-all;/*允许单词内换行，不需要加连字符*/
+	color:#454851;
+	font:italic 1.2em Georgia, serif;
+	display: -webkit-box;/*将对象作为弹性伸缩盒子模型显示*/
+	-webkit-box-orient: vertical;/*从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）*/
+	-webkit-line-clamp:8;/* 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。*/
+	overflow:hidden;/*设定溢出的处理*/
+}
+
+/*设定第一行第二个的属性-与第一个一致*/
+#mian .dv2 .contain .rows1 .div2 {
+	width:555px;
+	height:100%;
+}
+#mian .dv2 .contain .rows1 .div2 .fl {
+	width:278px;
+	height:300px;
+}
+#mian .dv2 .contain .rows1 .div2 .fr {
+	width:257px;
+	height:300px;
+	background:#fff;
+	padding-left:20px;
+}
+#mian .dv2 .contain .rows1 .div2 .fr .top {
+	width:230px;
+	height:150px;
+}
+#mian .dv2 .contain .rows1 .div2 .fr .top .title {
+	display:block;
+	height:60px;
+	margin-top:10px;
+	line-height:60px;
+	font-family: Arail;
+	font-weight:bold;
+}
+#mian .dv2 .contain .rows1 .div2 .fr .top .intro {
+	word-wrap:break-word;
+	word-break:break-all;
+	color:#454851;
+	font:italic 1.2em Georgia, serif;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:11;
+	overflow: hidden;
+}
+
+/*设定第二行第一个的属性-与第一个一致*/
+#mian .dv2 .contain .rows2 .div1 {
+	width:555px;
+	height:100%;
+}
+#mian .dv2 .contain .rows2 .div1 .fl {
+	width:278px;
+	height:300px;
+}
+#mian .dv2 .contain .rows2 .div1 .fr {
+	width:257px;
+	height:300px;
+	background:#fff;
+	padding-left:20px;
+}
+#mian .dv2 .contain .rows2 .div1 .fr .top {
+	width:230px;
+	height:150px;
+}
+#mian .dv2 .contain .rows2 .div1 .fr .top .title {
+	display:block;
+	height:60px;
+	margin-top:10px;
+	line-height:60px;
+	font-family: Arail;
+	font-weight:bold;
+}
+#mian .dv2 .contain .rows2 .div1 .fr .top .intro {
+	word-wrap:break-word;
+	word-break:break-all;
+	color:#454851;
+	font:italic 1.2em Georgia, serif;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:10;
+	overflow: hidden;
+}
+
+/*设定第二行第二个的属性-与第一个一致*/
+#mian .dv2 .contain .rows2 .div2 {
+	width:555px;
+	height:100%;
+}
+#mian .dv2 .contain .rows2 .div2 .fl {
+	width:278px;
+	height:300px;
+}
+#mian .dv2 .contain .rows2 .div2 .fr {
+	width:257px;
+	height:300px;
+	background:#fff;
+	padding-left:20px;
+}
+#mian .dv2 .contain .rows2 .div2 .fr .top {
+	width:230px;
+	height:150px;
+}
+#mian .dv2 .contain .rows2 .div2 .fr .top .title {
+	display:block;
+	height:60px;
+	margin-top:10px;
+	line-height:60px;
+	font-family: Arail;
+	font-weight:bold;
+}
+#mian .dv2 .contain .rows2 .div2 .fr .top .intro {
+	word-wrap:break-word;
+	word-break:break-all;
+	color:#454851;
+	font:italic 1.2em Georgia, serif;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:10;
+	overflow: hidden;
+}
+
+
+

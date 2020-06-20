@@ -1,0 +1,76 @@
+/*
+* @Author: hxp_warriors9812
+* @Date:   2020-6-16 
+* @Last Modified by:  hxp_warriors9812
+*/
+@charset "utf-8";
+/*设定全局样式及背景*/
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 宋体;
+}
+body{ 
+   	 background: url("http://p2.qhimg.com/bdr/__85/t018af1961351b137ec.jpg") no-repeat center center/cover;
+}
+
+/*定义超链接的样式*/
+a {
+    text-decoration:none;
+	font:italic 1em Georgia, serif;
+    color: whitesmoke;/*定义超链接的显示颜色*/
+}
+
+/*定义当鼠标悬浮在链接内容之上时，链接内容的样式*/
+a:hover{
+    color: #607d8b;
+}
+
+/*设定内容部分的框架样式*/
+#contact{
+	width:1100px;
+	height:1100px;
+	margin:0 auto;
+	background:transparent;/*设定该部分的背景为透明色，显得更和谐*/
+	border-radius: 10px;/*设定圆角显示*/
+}
+
+/*设定标题的样式*/
+#contact p{
+	height:45px;
+	line-height: 45px;/*设定标题所占行高*/
+	font:italic 2em Georgia, serif;
+	font-weight: 500;
+	margin-top: 20px;
+	color: whitesmoke;/*设定标题颜色和超链接一致*/
+	text-align: center;	
+}
+
+/*设置整体内容的框架部署*/
+#contact_content{
+	width: 800px;
+	height: 900px;
+	margin:0 auto;
+	background: white;
+	border-radius: 10px;/*设定圆角*/
+	margin-top: 15px;/*设置与标题框的间距*/
+	padding: 20px 40px;
+	box-shadow: 3px 3px 3px #888888;/*设定圆角阴影*/
+}
+
+/*设定标题部分的字体样式*/
+#contact_content .contact_title{
+	font:italic 1.5em Georgia, serif;
+	font-weight: 500;
+	color: #607d8b;
+	margin-top: 10px;/*为了显示的协调一些增加外边距*/
+	margin-bottom: 10px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+/*设定内容部分的字体样式*/
+#contact_content .contact_intro{
+	line-height: 45px;
+	font:italic 1.6em Georgia, serif;
+	color: #000;
+}

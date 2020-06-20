@@ -1,0 +1,63 @@
+/*
+* @Author: hxp_warriors9812
+* @Date:   2020-6-14 
+* @Last Modified by:  hxp_warriors9812
+*/
+@charset "utf-8";
+/*设定全局整体样式*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;   /*设定盒模型 */
+}
+
+/*设定无序列表的基础样式*/
+li{
+	list-style:none;
+}
+
+/*设定存放图片的基础样式*/
+img{
+	border:0;
+	vertical-align:middle;
+}
+
+/*定义超链接的样式*/
+a {
+    text-decoration:none;
+    color: whitesmoke;/*定义超链接的显示颜色*/
+}
+
+/*定义当鼠标悬浮在链接内容之上时，链接内容的样式*/
+a:hover{
+    color: aqua;
+}
+
+/*设定整体布局样式*/
+body{
+	-webkit-font-smoothing:antialiased;/*创新的使用了字体的抗锯齿属性*/
+	background-color:#fff;
+	font:12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+	color:#666;
+}
+
+/*设定页脚的清除浮动的设置*/
+.clearfix:after{
+	visibility:hidden;
+	clear:both;
+	display:block;
+	content:".";
+	height:0;
+}
+.clearfix{
+	*zoom:1;
+}
+.hide,.none{
+	display:none;
+}
+
+/*设置整体版心的样式*/
+.w {
+	width: 1200px;
+	margin: auto;
+}

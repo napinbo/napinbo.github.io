@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>郝熙平|平移世界-Contact Me</title>
+		<link rel="stylesheet" href="css/contact.css">
+		<link rel="shortcut icon " href="img/favicon.ico">
+	</head>
+	<body>
+		<!--contact的部分我们利用表单的形式进行设计-->
+		<div class="form">
+			<!--设定两种联系方式-->
+			<!--分别设定不同的联系方式的内容：这一部分为Email联系方式-->
+			<div id="Email">
+				<h1>Contact Me Via Email</h1>
+				<!--设定表单的post方法-->
+				<form action="/" method="post">
+				<!--设置表单需要填写的内容：第一行为发件地址和收件地址-->
+				<div class="top-row">
+				  <div class="field-wrap">
+				    <!--设定发件人邮箱-->
+					<label>
+				      Sender Mailbox<span class="req">*</span>
+				    </label>
+				    <input type="sender" required autocomplete="off" />
+				  </div>
+				        
+				  <div class="field-wrap">
+					<!--设定收件人邮箱（此处为自动填写）-->  
+				    <label>
+				      1547513898@qq.com<span class="req"></span>
+				    </label>
+				    <input type="mine"required autocomplete="off"/>
+				  </div>
+				</div>
+				<!--设定发送的邮件主题--> 
+				<div class="field-wrap">
+				  <!--设定水印内容-->
+				  <label>
+				    Message Title<span class="req">*</span>
+				  </label>
+				  <input type="title"required autocomplete="off"/>
+				</div>
+				<!--设定发送的邮件内容-->
+				<div class="field-wrap">
+				  <!--设定水印内容-->
+				  <label>
+				    Message Content<span class="req">*</span>
+				  </label>
+				  <input type="content"required autocomplete="off"/>
+				</div>
+				</form>
+			</div>
+			
+			<!--分别设定不同的联系方式的内容：这一部分为System联系方式-->
+			<div class="System">
+				<h1>Contact Me Via System</h1>
+				<!--设定表单的post方法-->
+				<form action="/" method="post">
+					<div class="field-wrap">
+						<!--设定水印内容-->
+						<label>
+						  Contact Name<span class="req">*</span>
+						</label>
+						<input type="name"required autocomplete="off"/>
+					</div>
+					
+					<div class="field-wrap">
+					  <!--设定水印内容-->
+					  <label>
+					    Contact Content<span class="req">*</span>
+					  </label>
+					  <input type="content"required autocomplete="off"/>
+					</div>
+					
+					<p class="forgot"><a href="index.html">Learn More About Me</a></p>
+					<button class="button button-block"/>Send To Me</button>
+				</form>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
+			<script type="text/javascript">
+				L2Dwidget.init();
+			</script>
+	</body>
+</html>

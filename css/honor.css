@@ -1,0 +1,153 @@
+/*
+* @Author: hxp_warriors9812
+* @Date:   2020-6-14
+* @Last Modified by:  hxp_warriors9812
+*/
+@charset "utf-8";
+
+/*设定全局样式以及颜色，为了保障美观所以没有在奖状显示部分添加背景图片*/
+body {
+	background-color: #f3f5f7;
+}
+
+/*在首部banner的部分设置背景图，因未添加juery故没有使用轮播的形式，提交作业后会考虑补充*/
+.banner{
+	height: 420px;
+	background: url("http://p2.qhimg.com/bdr/__85/t018af1961351b137ec.jpg") no-repeat center center/cover;
+}
+
+/*设定内部侧边栏样式*/
+.inner{
+	height: 420px;
+	position: relative;
+}
+.subnav {
+	position: absolute;/*设定侧边栏位置定义形式*/
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 190px;
+	background:rgba(0, 0, 0, .3);
+	padding-top:20px ;
+}
+
+/*设定侧边栏内字体的样式*/
+.subnav li {
+	padding-left:20px;
+	position: relative;
+	height: 45px;
+	line-height: 45px;
+}
+
+/*设定侧边栏内超链接形式*/
+.subnav a {
+	font-size: 14px;
+	color: #fff;
+}
+.subnav a:hover {
+	color: whitesmoke;
+}
+
+/*设定个人用于展示部分的整体框架*/
+.products {
+	margin-top: 30px;
+	position: relative;
+}
+
+/*左侧标题样式*/
+.pro-hd {
+	height: 40px;
+}
+.pro-bd h4 {
+	font-weight: normal;
+	font-size: 20px;
+}
+
+/*右侧超链接标题样式*/
+.pro-hd a {
+	position: absolute;
+	right: 30px;
+	top: 0;
+}
+
+/*设置每一个小的展示框样式*/
+.pro-bd li { 
+	width:228px;
+	height: 270px;
+	overflow: hidden;/*设定溢出处理方式*/
+	background-color: #fff;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	transition: all 0.4s;/*创新的使用鼠标悬停时的过渡效果*/
+}
+.pro-bd li:hover {
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
+	transform: translateY(-10px);
+}
+.pro-bd li:nth-child(5n) {
+	margin-right: 0;
+}
+
+/*设定图片的样式*/
+.pic img{
+transition: all 0.4s;/*创新的使用鼠标悬停时的过渡效果-需与外框一致*/
+}
+.pic img:hover {
+	margin-left: -5px;
+}
+
+/*设定荣誉称号的字体样式*/
+.pro-titie {
+	width: 185px;
+	margin: 20px auto;
+	font-size: 14px;
+	color: #505050;
+}
+
+/*设定荣誉类别的字体样式*/
+.pro-bd p {
+	width: 185px;
+	margin: 20px auto;
+	color: #999;
+}
+.pro-bd p span {
+	color: #ff7c2d;
+}
+
+/*设定页脚的整体样式*/
+footer{
+	height: 190px;
+	background-color: black;
+	margin-top: 50px;
+	padding-top: 50px;
+}
+
+/*设定左侧页脚样式*/
+.footer-l{
+	margin-left:60px ;
+	float: left;
+}
+
+.footer-l p {
+	margin: 20px 0 15px 0;
+	line-height: 24px;
+	font:italic 1em Georgia, serif;
+}
+
+/*设定右侧页脚样式-描述列表的样式*/
+.footer-r dl{
+	float: left;
+	margin-left: 100px;
+}
+
+.footer-r dl dt {
+	font:italic 1.5em Georgia, serif;
+	color: whitesmoke;
+	height: 30px;
+}
+.footer-r dd {
+	font:italic 1.5em Georgia, serif;
+	height: 20px;
+	line-height:25px;/*设定距离标题的间距*/
+}

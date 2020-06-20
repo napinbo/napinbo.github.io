@@ -1,0 +1,50 @@
+/*
+* @Author: hxp_warriors9812
+* @Date:   2020-6-13 
+* @Last Modified by:  hxp_warriors9812
+*/
+@charset "utf-8";
+/*设定整体的全局框架*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font: 12px/1 "\u5b8b\u4f53", Tahoma, Geneva, sans-serif;
+  margin: auto;
+  position: relative;
+}
+
+/*在body部分添加背景图片*/
+body{
+	background: url("http://p2.qhimg.com/bdr/__85/t018af1961351b137ec.jpg") no-repeat center center/cover;
+}
+
+a {
+    text-decoration:none;
+    color: whitesmoke;/*定义超链接的显示颜色*/
+}
+
+/*设定表格盒子的布局*/
+.credit {
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+  margin-top: 100px;
+  background-color: transparent;/*设定为透明更加美观*/
+}
+
+.title{
+	font:italic 1em Georgia, serif;
+	font-size: 20px;
+}
+
+th{
+	font: 15px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+	font-weight: bold;
+}
+
+td{
+	font:italic 1em Georgia, serif;
+	font-size: 15px;
+}

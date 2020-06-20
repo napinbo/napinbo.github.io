@@ -1,0 +1,194 @@
+/*
+* @Author: hxp_warriors9812
+* @Date:   2020-6-11 
+* @Last Modified by:  hxp_warriors9812
+*/
+@charset "utf-8";
+/*定义页面的整体布局*/
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+}
+
+a {
+    text-decoration:none;
+    color: white;/*定义超链接的显示颜色*/
+}
+
+/*定义存放照片墙框架的布局样式*/
+.collective-list{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+/*定义每一个列表元素的样式*/
+.collective-list ul li{
+	border-bottom: none;/*为了美观不添加边界*/
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 52px;
+}
+
+/*设定每一个列表元素的背景图片*/
+.collective-list ul li.list-item-1{
+	background-image: url('../img/collective4.jpg');
+	background-size: cover;
+}
+.collective-list ul li.list-item-2{
+	background-image: url('../img/collective2.jpg');
+	background-size: cover;
+}
+.collective-list ul li.list-item-3{
+	background-image: url('../img/collective3.jpg');
+	background-size: cover;
+}
+.collective-list ul li.list-item-4{
+	background-image: url('../img/collective1.jpg');
+
+}
+.collective-list ul li.list-item-5{
+	background-image: url('../img/collective5.jpg');
+	background-size: cover;
+}
+.collective-list ul li.list-item-6{
+	background-image: url('../img/collective6.jpg');
+}
+
+/*设定右侧的第二个列表元素的位置*/
+.collective-list ul li.list-item-4{
+	background-position: center 100%;
+}
+
+/*设定右侧的第三个列表元素的位置*/
+.collective-list ul li.list-item-6{
+	background-position: center 100%;
+	color: #fff;
+}
+
+/*设定每一个列表元素的样式*/
+.collective-list ul li{
+	width: 50%;
+	height: 580px;
+	border: 12px #fff solid;
+	float: left;
+}
+
+/*设定图片上层的中文文字的样式*/
+.collective-list ul li .content{
+	text-align: center;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	font-size: 40px;
+}
+
+/*设定图片上层的英文文字的样式*/
+.collective-list ul li .Eng{
+	width: 430px;
+	height: 52px;
+	padding-top: 4px;
+	font:italic 2em Georgia, serif;
+	font-weight: 300;
+	text-align: center;
+	line-height: 26px;
+	margin: 0 auto;
+}
+/*对列表中每一个元素的字体进行框内距离的设定，令其看起来更为和谐*/
+.collective-list ul li.list-item-1 .content{
+	padding-top: 50%;
+	color: #fff;
+}
+.collective-list ul li.list-item-1 .Eng{
+	padding-top: 10%;
+	color: #fff;
+}
+
+.collective-list ul li.list-item-2 .content{
+	padding-top: 50%;
+	color: #fff;
+}
+.collective-list ul li.list-item-2 .Eng{
+	padding-top: 10%;
+	color: #fff;
+}
+.collective-list ul li.list-item-3 .content{
+	padding-top: 50%;
+	color: #fff;
+}
+.collective-list ul li.list-item-3 .Eng{
+	padding-top: 10%;
+	color: #fff;
+}
+.collective-list ul li.list-item-4 .content{
+	padding-top: 50%;
+	color: #fff;
+}
+.collective-list ul li.list-item-4 .Eng{
+	padding-top: 10%;
+	color: #fff;
+}
+.collective-list ul li.list-item-5 .content{
+	padding-top: 50%;
+	color: #fff;
+}
+.collective-list ul li.list-item-5 .Eng{
+	padding-top: 10%;
+	color: #fff;
+}
+
+.collective-list ul li.list-item-6 .content{
+	padding-top: 50%;
+	color: #fff;
+}
+.collective-list ul li.list-item-6 .Eng{
+	padding-top: 10%;
+	color: #fff;
+}
+.collective-list ul li:nth-child(2n-1){
+	border-right: none;
+}
+
+/*设定页脚的布局样式*/
+footer{
+	width: 100%;
+	height: auto;
+	background-color: transparent;/*设为透明*/
+}
+
+/*设定页脚的文字部分的字体样式*/
+footer .footerline{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 12px;
+}
+/*对英文字体额外设定样式*/
+span {
+	font:italic 1em Georgia, serif;
+}
+
+/*设定copyright部分的字体样式*/
+footer .copyright{
+	width: 90%;
+	height: 40px;
+	margin: 0 auto;
+	font:italic 0.75em Georgia, serif;
+	line-height:40px ;
+}
+
+/*设定该部分的超链接样式*/
+footer .copyright a{
+	color: #777;
+	text-decoration: none;
+}
+footer .copyright a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+
+/*换行*/
+footer hr{
+	width: 90%;
+	margin: 10px auto;
+}

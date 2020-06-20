@@ -1,0 +1,86 @@
+/*
+* @Author: hxp_warriors9812
+* @Date:   2020-6-14 
+* @Last Modified by:  hxp_warriors9812
+*/
+@charset "utf-8";
+/*设置整体的样式*/
+body,h1,h2,h3,h4,h5,h6,p{
+	margin:0;padding:0
+}
+
+a {
+	text-decoration:none;
+	color: white;/*定义超链接的显示颜色*/
+	font:italic 1em Georgia, serif;/*设置字体样式（文章标题）*/
+}
+
+/*设置body部分的背景样式*/
+body{
+	background: url("http://p2.qhimg.com/bdr/__85/t018af1961351b137ec.jpg") no-repeat center center/cover;
+	font-size: 14px;
+}
+
+/*设置中文字体部分的字体样式*/
+p{
+	font: 20px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+}
+
+/*设置英文部分的字体样式*/
+.En{
+	font:italic 1em Georgia, serif;
+}
+
+/*设置文章标题的字体样式*/
+.article-title {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*设置文章内容的字体样式*/
+.article-content {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*设置左右两部分弹性盒子的长度，右侧主要留出给live2D*/
+.content-left {
+    flex: 3;
+}
+.content-right{
+    flex: 1;
+}
+
+/*设置每个存储文章盒子的属性*/
+.article-item {
+    display: flex;
+    flex-flow: row nowrap;/*设定灵活换行属性*/
+    background: transparent;
+    padding: 10px;
+	border-bottom:1px solid #000;
+	border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/*作者简介栏的字体颜色设计*/
+.article-info{
+    color: whitesmoke;
+}
+
+/*设定图片的所占比例*/
+.item-img {
+    flex: 1;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.item-img > img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.item-content {
+    flex: 1;
+    padding-left: 20px;
+}
